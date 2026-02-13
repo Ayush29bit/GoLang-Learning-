@@ -39,6 +39,26 @@ var name string = "John doe" -: This is a variable declared with an explicit var
 
 var name = "John doe" -: This is a varible declared using type inference in go where go infers the type from value
 
+When we declare a variable and we assign their value, it is no problem as Go can already infer the type of the variable
+
+When we only declare the variable and wish to assign the value later, we need to declare the type of the variable
+
+
+
+# Variable declaration
+var name string
+var age int
+var isActive bool
+These create variables with zero values (empty string "", 0, false)
+
+go
+func main() {
+    name := "John"
+    age := 25
+    isActive := true
+}
+This is the most common way to declare variables in Go. The := operator declares and assigns in one step. You cannot use := outside of functions (package-level variables must use var).
+
 ## Printf function
 This function is part of the fmt package
 Printf=Print+format
@@ -55,5 +75,7 @@ Verb	Meaning
 %p	pointer address
 %x	hex
 %b	binary
+
+### GO IS A STATICALLY TYPED LANGUAGE, THE DATA TYPE SHOULD BE TOLD WHEN DECLARING A VARIABLE 
 
 
