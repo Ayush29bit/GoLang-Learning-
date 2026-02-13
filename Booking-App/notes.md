@@ -78,4 +78,15 @@ Verb	Meaning
 
 ### GO IS A STATICALLY TYPED LANGUAGE, THE DATA TYPE SHOULD BE TOLD WHEN DECLARING A VARIABLE 
 
+## Input to app 
+In order to take the input from a user, we use the scan() function from the same fmt package 
+
+mportant Limitation
+
+fmt.Scan()-:
+Stops at whitespace
+Not ideal for full sentences
+Not ideal for robust input handling
+If you want full line input, use Scanln or bufio.
+
 
