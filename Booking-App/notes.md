@@ -2,6 +2,10 @@
 Everything in Go is organised in packages 
 func is the keyword for declaring a function in GO
 
+Go's standard library provides different core packages for us to use 
+(fmt is one of these core packages which we use by importing)
+
+Packages can be though of containers of different functionalties which go gives us to use
 
 Go's module system is about dependency management and code organization. Let me break down what's happening and why.
 
