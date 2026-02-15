@@ -30,4 +30,7 @@ func main() {
 	fmt.Scan(&userTickets)
 	fmt.Printf("User %v %v with email %v booked %v tickets\n", firstName, lastName, email, userTickets)
 	fmt.Println("Thank you for booking your tickets!")
+
+	remainingTickets = remainingTickets - userTickets
+	fmt.Printf("%v tickets remaining for %v\n", remainingTickets, conferenceName)
 }
