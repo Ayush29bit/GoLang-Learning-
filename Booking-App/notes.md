@@ -149,5 +149,25 @@ for {
     fmt.Println("Running forever")
 }
 
+##### Looping Over Strings
+str := "hello"
 
+for index, char := range str {
+    fmt.Println(index, char)
+}
+
+#### Looping Over Slices / Arrays (range)
+nums := []int{10, 20, 30}
+
+for index, value := range nums {
+    fmt.Println(index, value)
+}
+
+#### Important 
+
+for _, value := range nums {
+    fmt.Println(value)
+}
+The _ means: “Ignore this value.”
+Go forces you to use variables so _ discards them.
 
