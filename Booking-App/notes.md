@@ -89,4 +89,10 @@ Not ideal for full sentences
 Not ideal for robust input handling
 If you want full line input, use Scanln or bufio.
 
+## Pointers
+Pointers in go are called special variables and are used to point to the value of other variable in the memory essentially serving as memory address
+
+&name==points to the address in the memory where the value of name is stored 
+
+
 
