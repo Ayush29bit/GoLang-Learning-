@@ -120,4 +120,34 @@ It uses append() method to add values into it
 var a[] int 
 a = append(a,"apple")
 
+## Loops in GO 
+Go has only one loop keyword:
+
+for
+That’s it.
+No while.
+No do-while.
+No foreach.
+
+Standard for loop :
+
+for i := 0; i < 5; i++ {
+    fmt.Println(i)
+}
+
+While Style Loop:
+
+i := 0
+for i < 5 {
+    fmt.Println(i)
+    i++
+}
+
+Infine Loop:
+
+for {
+    fmt.Println("Running forever")
+}
+
+
 
