@@ -94,5 +94,30 @@ Pointers in go are called special variables and are used to point to the value o
 
 &name==points to the address in the memory where the value of name is stored 
 
+## Arrays and Slices 
+
+An array in Go:
+
+Fixed size
+Part of the type
+Stored contiguously in memory
+
+[x]int is how the type of an array is defined 
+
+var a[3]int 
+var b[4]int
+
+a = b // False because they have different types 
+
+#### Slices are abstraction of arrays in Go 
+They are more flexible and powerful:
+variable length or get an subarray of its own
+
+var a[] int 
+we dont define the size of the array and it becomes a slice
+It uses append() method to add values into it 
+
+var a[] int 
+a = append(a,"apple")
 
 
