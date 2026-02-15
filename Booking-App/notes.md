@@ -171,3 +171,52 @@ for _, value := range nums {
 The _ means: “Ignore this value.”
 Go forces you to use variables so _ discards them.
 
+## Conditionals in GO
+
+Go mainly gives you:
+if
+if-else
+switch
+
+##### Basic if Statement
+age := 20
+
+if age >= 18 {
+    fmt.Println("Adult")
+}
+
+#### if-else
+if age >= 18 {
+    fmt.Println("Adult")
+} else {
+    fmt.Println("Minor")
+}
+
+
+#### else if
+score := 85
+
+if score >= 90 {
+    fmt.Println("A")
+} else if score >= 75 {
+    fmt.Println("B")
+} else {
+    fmt.Println("C")
+}
+
+#### switch Statement
+
+Go’s switch is more powerful than most languages.
+Basic form:
+
+day := "Monday"
+
+switch day {
+case "Monday":
+    fmt.Println("Start of week")
+case "Friday":
+    fmt.Println("Weekend soon")
+default:
+    fmt.Println("Regular day")
+}
+
