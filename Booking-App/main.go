@@ -37,6 +37,11 @@ func main() {
 		fmt.Println("Enter number of tickets you want to buy")
 		fmt.Scan(&userTickets)
 
+		if userTickets > remainingTickets {
+			fmt.Printf("We only have %v tickets remaining, so you can't book %v tickets\n", remainingTickets, userTickets)
+			continue
+		}
+
 		// Inserting user details into the array(slice for flexible size)
 		bookings = append(bookings, firstName+" "+lastName)
 
