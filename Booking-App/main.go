@@ -58,8 +58,7 @@ func main() {
 		}
 		fmt.Printf("The first names of bookings are: %v\n", firstNames)
 
-		noTicketsRemainign := remainingTickets == 0
-		if noTicketsRemainign {
+		if remainingTickets == 0 {
 			// end program
 			fmt.Println("Our conference is booked out. Come back next year.")
 			break
