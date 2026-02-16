@@ -72,13 +72,17 @@ func main() {
 		}
 
 		else {
-			fmt.Print("Your input is invalid, please try again\n")
-		}
-
-		if remainingTickets == 0 {
-			// end program
-			fmt.Println("Our conference is booked out. Come back next year.")
-			break
+			if !isValidName {
+				fmt.Println("First name and last name should be at least 2 characters long")
+			}
+			if !isValidEmail {
+				fmt.Println("Email address should contain @ sign")
+			}
+			if !isValidTicketNumber {
+				fmt.Println("Number of tickets should be more than 0 and less than remaining tickets")
+			}
+			fmt.Println("Your input is invalid, please try again")
+			continue
 		}
 	}
 
