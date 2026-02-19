@@ -220,3 +220,17 @@ default:
     fmt.Println("Regular day")
 }
 
+
+# Functions in go 
+
+Functions in Go are clean, explicit, and designed to scale in large systems.
+
+Functions in go are declared using func keyword
+
+Structure :
+func functionname(parameters) returntype{
+    //Body of function
+}
+
+They are used to encapsulate logic of lines of code together like a container and can be called by their name when required 
+
