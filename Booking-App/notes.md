@@ -234,3 +234,34 @@ func functionname(parameters) returntype{
 
 They are used to encapsulate logic of lines of code together like a container and can be called by their name when required 
 
+
+## Package Variables 
+
+A package variable is a variable declared outside any function, at the top level of a file.
+
+package main
+
+import "fmt"
+
+var appName = "Booking App"
+var totalTickets = 100
+
+func main() {
+    fmt.Println(appName)
+}
+Those var declarations are package-level variables.
+
+They:
+
+Belong to the package
+Exist for the lifetime of the program
+Are globally accessible within that package
+
+
+In Go:
+
+Lowercase → private to package
+Uppercase → exported (accessible from other packages)
+
+
+
