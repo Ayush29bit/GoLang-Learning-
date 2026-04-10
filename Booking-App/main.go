@@ -17,8 +17,6 @@ func main() {
 
 	greetUsers()
 
-	var bookings []string
-
 	for {
 		var firstName string
 		var lastName string
