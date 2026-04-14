@@ -3,18 +3,24 @@ package main
 import (
 	"net/http"
 
+	"gin-learning/initializers"
+
 	"github.com/gin-gonic/gin"
 )
+
+func init() {
+	initializers.LoadEnvVars()
+}
 
 func main() {
 	// Create a Gin router with default middleware (logger and recovery)
 	r := gin.Default()
 
 	// Define a simple GET endpoint
-	r.GET("/ping", func(c *gin.Context) {
+	r.GET("/", func(c *gin.Context) {
 		// Return JSON response
 		c.JSON(http.StatusOK, gin.H{
-			"message": "pong",
+			"message": "Welcome to gin server",
 		})
 	})
 
